@@ -13,7 +13,7 @@ This project is a full-stack MVC application developed with .NET 6, demonstratin
      dotnet ef migrations add init
      ```
 
-**Configuration**
+**Admin Login**
 
    - Default credentials for accessing the application:
      - **Name**: Admin
