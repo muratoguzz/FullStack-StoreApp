@@ -36,5 +36,18 @@ This project uses the following NuGet packages:
 - **Microsoft.EntityFrameworkCore.Design**: Includes tools required for design-time development.
 - **Microsoft.EntityFrameworkCore.SqlServer**: Enables SQL Server as the database provider.
 
+## Getting Started
+
+### Prerequisites
+
+- .NET SDK 6.0 or later
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/muratoguzz/FullStack-StoreApp.git
+   cd RestApi-BookfyApp
+
 
 
