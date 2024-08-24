@@ -1,0 +1,22 @@
+﻿@model Category
+
+<div class="text-center">
+    <div class="display-6">Create Category</div>
+</div>
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+    @* enctype="multipart/form-data" bu ifade olmazsa dosyalama işlemi yaparken hata olur *@
+
+    <div class="text-danger" asp-validation-summary="All"></div> @* validation *@
+    <div class="form-group my-3">
+        <label asp-for="CategoryName"></label>
+        <input asp-for="CategoryName" class="form-control" />
+    </div>
+
+    <div class="form-group my-3">
+        <div class="btn btn-group">
+            <button class="btn btn-primary" type="submit">Save</button>
+            <a asp-action="Index" class="btn btn-outline-primary">Products</a>
+        </div>
+    </div>
+</form>

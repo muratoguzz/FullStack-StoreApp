@@ -1,0 +1,74 @@
+﻿@model Order
+
+<div class="text-danger" asp-validation-summary="All"></div>
+
+<div class="col-md-4">
+    <h3 class="text-danger">
+        Payment Amount (TL) : ₺@Model?.PaymentAmount;
+    </h3>
+</div>
+
+<div class="col-md-8">
+    <form method="post" asp-action="Checkout">
+        <div class="form-group my-3">
+            <label asp-for="Name"></label>
+            <input class="form-control" asp-for="Name">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="LastName"></label>
+            <input class="form-control" asp-for="LastName">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="Address"></label>
+            <input class="form-control" asp-for="Address">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="City"></label>
+            <input class="form-control" asp-for="City">
+        </div>
+
+         <div class="form-group my-3">
+            <label asp-for="Phone"></label>
+            <input class="form-control" asp-for="Phone">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="Email"></label>
+            <input class="form-control" asp-for="Email">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="CardName"></label>
+            <input class="form-control" asp-for="CardName">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="CardNumber"></label>
+            <input class="form-control" asp-for="CardNumber">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="ExpirationMonth"></label>
+            <input class="form-control" asp-for="ExpirationMonth">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="ExpirationYear"></label>
+            <input class="form-control" asp-for="ExpirationYear">
+        </div>
+
+        <div class="form-group my-3">
+            <label asp-for="Cvc"></label>
+            <input class="form-control" asp-for="Cvc">
+        </div> 
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+                Complete Order
+            </button>
+        </div>
+    </form>
+</div>

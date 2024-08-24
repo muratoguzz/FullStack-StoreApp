@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE_edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreApp</title>
+    <link rel="stylesheet" asp-append-version="true" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" asp-append-version="true" href="~/css/site.css" />
+    <link rel="stylesheet" asp-append-version="true" href="~/lib/font-awesome/css/all.css" />
+</head>
+<body>
+    <header>
+        <partial name="_Navbar" />  
+        @RenderSection("Header", required:false)
+        <hr/>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        @RenderSection("Footer", required:false)
+        <partial name="_Footer" />
+    </footer>
+    <script asp-append-version="true" src="~/lib/jquery/jquery.min.js"></script>
+    <script asp-append-version="true" src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script asp-append-version="true" src="~/js/site.js"></script>
+    <script asp-append-version="true" src="~/lib/font-awesome/js/all.min.js"></script>
+    @await RenderSectionAsync("Script", required:false)
+</body>
+</html>
