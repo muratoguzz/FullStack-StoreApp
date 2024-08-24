@@ -18,20 +18,6 @@ This project is a full-stack MVC application developed with .NET 6, demonstratin
    - Default credentials for accessing the application:
      - **Name**: Admin
      - **Password**: Admin+123456
-
-**Run the Application**
-
-   - Restore dependencies:
-     ```bash
-     dotnet restore
-     ```
-   - Update `appsettings.json` with your configuration:
-     - Connection strings
-     - JWT or session settings
-   - Run the application:
-     ```bash
-     dotnet run
-     ```
      
 ## API Endpoints
 
