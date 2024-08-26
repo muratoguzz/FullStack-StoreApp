@@ -47,7 +47,7 @@ This project uses the following NuGet packages:
 1. Clone the repository:
    ```bash
    git clone https://github.com/muratoguzz/FullStack-StoreApp.git
-   cd RestApi-BookfyApp
+   cd FullStack-StoreApp
 
 
 
